@@ -2,256 +2,272 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 	   body {
-		   font-family: 'Courier New', Courier, monospace;
-		   padding: 3rem;
-		   display: flex;
-		   flex-direction: column;
+	   font-family: 'Courier New', Courier, monospace;
+	   padding: 3rem;
+	   display: flex;
+	   flex-direction: column;
 	   }
 	   button {
-		   cursor: pointer;
+	   cursor: pointer;
 	   }
 	   h1 {
-		   padding-bottom: 1rem;
-		   border-bottom: 2px solid;
-		   border-bottom-style: dashed;
-		   font-style: italic;
-		   width:40% 
+	   padding-bottom: 1rem;
+	   border-bottom: 2px solid;
+	   border-bottom-style: dashed;
+	   width:40% 
 	   }
 	   button {
-		   padding: 0.5rem 1rem 0.5rem 1rem; 
-		   border: none;
+	   padding: 0.5rem 1rem 0.5rem 1rem; 
+	   border: none;
 	   }
 	   p {
-		   margin-bottom: 0;
+	   margin-bottom: 0;
 	   }
 	   li {
-		   list-style-type: circle;
+	   list-style-type: circle;
 	   }
 	   .container {
-		   max-width: max(50%, 50vh);
+	   max-width: max(50%, 50vh);
 	   }
 	   .green {
-		   background-color: #395144;       
-		   color: #f9e4b9;
+	   background-color: #395144;       
+	   color: #f9e4b9;
 	   }
 	   .green a {
-		   color: #AA8B56
+	   color: #AA8B56
 	   }
 	   .green h1 {
-		   border-color:#AA8B56; 
+	   border-color:#AA8B56; 
 	   }
-	   
 	   .dark {
-		   background-color: #082032;
-		   color: #F5F5F5
+	   background-color: #082032;
+	   color: #F5F5F5
 	   }
 	   .dark a {
-		   color: #FF4C29;
+	   color: #FF4C29;
 	   }
 	   .dark h1 {
-		   border-color: #FF4C29
+	   border-color: #FF4C29
 	   }
-   
 	   .usa {
-        	background-color: #ffffff;
-        	color: #306ebe;
-    	}
-    	.usa a {
-        	color: #e72905;
-    	}
-    	.usa h1 {
-        	border-color: #e72905;
-    	}
-   
+	   background-color: #ffffff;
+	   color: #306ebe;
+	   }
+	   .usa a {
+	   color: #e72905;
+	   }
+	   .usa h1 {
+	   border-color: #e72905;
+	   }
 	   .navy {
-		   background-color: #054675;
-		   color: #EEEEEE
+	   background-color: #054675;
+	   color: #EEEEEE
 	   }
 	   .navy a {
-		   color: #75c7f0
+	   color: #75c7f0
 	   }
 	   .navy h1 {
-		   border-color: #75c7f0
+	   border-color: #75c7f0
 	   }
-   
 	   .light {
-		   background-color: #F8F9D7;
-		   color: #5b77b5
+	   background-color: #f8f6c5;
+	   color: #0e0e0e
 	   }
 	   .light a {
-		   color: #6E85B7
+	   color: #d02a34
 	   }
 	   .light h1 {
-		   border-color:#B2C8DF; 
+	   border-color:#d02a34; 
 	   }
-   
 	   .hc {
-		   background-color: #04111c;
-		   color: #ffd500
+	   background-color: #04111c;
+	   color: #ffd500
 	   }
 	   .hc a {
-		   color: #F55353
+	   color: #F55353
 	   }
 	   .hc h1 {
-		   border-color: #F55353
+	   border-color: #F55353
 	   }
-   
 	   .blue {
-		   background-color: rgb(64, 64, 205);
-		   color: white
+	   background-color: rgb(64, 64, 205);
+	   color: white
 	   }
 	   .blue a {
-		   color: white;
+	   color: white;
 	   }
-   
 	   .black {
-		   background-color: black;
-		   color: white
+	   background-color: black;
+	   color: white
 	   }
 	   .black a {
-		   color: white
+	   color: white
 	   }
-   
 	   .red {
-		   background-color: #BB2205;
-		   color:black 
+	   background-color: #b8351d;
+	   color:black 
 	   }
 	   .red a {
-		   color:black 
+	   color:black 
 	   }
-	   
 	   .gold {
-		   background-color: #ffc400;
-		   color:black 
+	   background-color: #ffc400;
+	   color:black 
 	   }
 	   .gold a {
-		   color:black 
+	   color:black 
 	   }
-   
 	   .pink {
-		   background-color: #FFABE1;
-		   color: black
+	   background-color: #FFABE1;
+	   color: black
 	   }
 	   .pink a {
-		   color: black
+	   color: black
 	   }
-   
 	   .light1 {
-		   background-color: white;
-		   color: black;
+	   background-color: white;
+	   color: black;
 	   }
 	   .light1 a {
-		   color: #54B435
+	   color: #54B435
 	   }
 	   .light1 h1 {
-		   border-color: #54B435
+	   border-color: #54B435
 	   }
-   
 	   .light2 {
-		   background-color: white;
-		   color: black;
+	   background-color: white;
+	   color: black;
 	   }
 	   .light2 a {
-		   color: #ffc400
+	   color: #ffc400
 	   }
 	   .light2 h1 {
-		   border-color: #ffc400
+	   border-color: #ffc400
 	   }
-   
 	   .light3 {
-		   background-color: white;
-		   color: black;
+	   background-color: white;
+	   color: black;
 	   }
 	   .light3 a {
-		   color: #ff2a00
+	   color: #ff2a00
 	   }
 	   .light3 h1 {
-		   border-color: #ff2a00
+	   border-color: #ff2a00
 	   }
-   
 	   .light4 {
-		   background-color: white;
-		   color: black;
+	   background-color: white;
+	   color: black;
 	   }
 	   .light4 a {
-		   color: #0522df
+	   color: #0522df
 	   }
 	   .light4 h1 {
-		   border-color: #0522df
+	   border-color: #0522df
 	   }
-   
 	   .light5 {
-		   background-color: white;
-		   color: black;
+	   background-color: white;
+	   color: black;
 	   }
 	   .light5 a {
-		   color: #ff8400
+	   color: #ff8400
 	   }
 	   .light5 h1 {
-		   border-color: #ff8400
+	   border-color: #ff8400
 	   }
-   
 	   .hc1 {
-		   background-color: black;
-		   color: #ffc400
+	   background-color: black;
+	   color: #ffc400
 	   }
 	   .hc1 a {
-		   color: #ffc400
+	   color: #ffc400
 	   }
 	   .hc1 h1 {
-        border-color: #ffc400
-    }
-    .hc2 {
-        background-color: black;
-        color: #22ff00
-    }
-    .hc2 a {
-        color: #22ff00
-    }
-    .hc2 h1 {
-        border-color: #22ff00
-    }
- </style>
- <script>
-    const themes = [
-        '', 
-        'green', 
-        'pink', 
-        'dark', 
-        'usa', 
-        'navy', 
-        'light', 
-        'light1', 
-        'hc', 
-        'blue', 
-        'black', 
-        'red', 
-        'gold',
-        'light2',
-        'light3',
-        'light4',
-        'light5',
-        'hc1',
-        'hc2'
-    ]
-    window.addEventListener("DOMContentLoaded", () => {
-        const theme = themes[Math.floor(Math.random() * themes.length)];
-        document.querySelector("body").className = theme
-    })
- </script>
-
-<title>Jackson Foster | Software Engineer</title>
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-	   <div class="container">
-	   	   <h1>Hello!</h1>
-		   <p>My name is Jackson Foster. I'm currently working as a software engineer at <a target="_blank" href="https://www.rover.com/">Rover.com</a>, with a focus on site speed and technical SEO. I primarily work with...</p>
-		   <ul>
-			   <li>React</li>
-			   <li>Django</li>
-			   <li>TypeScript</li>
-		   </ul>
-		   <p>You can contact me on <a target="_blank"href="https://linkedin.com/in/jackson-w-foster/">LinkedIn</a>.</p>
-	   </div>
-   </body>
+	   border-color: #ffc400
+	   }
+	   .hc2 {
+	   background-color: black;
+	   color: #22ff00
+	   }
+	   .hc2 a {
+	   color: #22ff00
+	   }
+	   .hc2 h1 {
+	   border-color: #22ff00
+	   }
+	   .dark1 {
+	   background-color: #0e0e0e;
+	   color: #f8f6c5
+	   }
+	   .dark1 a {
+	   color: #f3b200
+	   }
+	   .dark1 h1 {
+	   border-color: #d02a34
+	   }
+	   .hc3 {
+	   background-color: #e1b864;
+	   color: #2e2725;
+	   }
+	   .hc3 a {
+	   color: #2e2725;
+	   }
+	   .hc3 h1 {
+	   border-color:#e9e1dd 
+	   }
+	   .hc4 {
+	   background-color: #014d48;
+	   color: #fff
+	   }
+	   .hc4 a {
+	   color: #ffd966;
+	   }
+	   .hc4 h1 {
+	   color: #ffd966;
+	   border-color: #d11b24
+	   }
+	</style>
+	<script>
+	   const themes = [
+		'', 
+		'green', 
+		'pink', 
+		'dark', 
+		'usa', 
+		'navy', 
+		'light', 
+		'light1', 
+		'hc', 
+		'blue', 
+		'black', 
+		'red', 
+		'gold',
+		'light2',
+		'light3',
+		'light4',
+		'light5',
+		'hc1',
+		'hc2',
+		'dark1',
+		'hc3',
+		'hc4'
+	   ]
+	   window.addEventListener("DOMContentLoaded", () => {
+		   const theme = themes[Math.floor(Math.random() * themes.length)];
+		   document.querySelector("body").className = theme
+	   })
+	</script>
+	<title>Jackson Foster | Software Engineer</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+ </head>
+ <body>
+	<div class="container">
+	   <h1>Hello!</h1>
+	   <p>My name is Jackson Foster. I'm currently working as a software engineer at <a target="_blank" href="https://www.rover.com/">Rover.com</a>, with a focus on site speed and technical SEO. I primarily work with...</p>
+	   <ul>
+		  <li>React</li>
+		  <li>Django</li>
+		  <li>TypeScript</li>
+	   </ul>
+	   <p>You can contact me on <a target="_blank"href="https://linkedin.com/in/jackson-w-foster/">LinkedIn</a>.</p>
+	</div>
+ </body>
